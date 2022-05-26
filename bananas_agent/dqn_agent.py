@@ -100,11 +100,11 @@ class Agent(object):
     def get_experience_delta(self, state, action, reward, next_state, done):
         """ Compute the delta between the target and local q_value. """
         experiences = [
-            torch.Tensor([state], dtype=torch.float).to(DEVICE),
-            torch.Tensor([[action]], dtype=torch.long).to(DEVICE),
-            torch.Tensor([reward], dtype=torch.float).to(DEVICE),
-            torch.Tensor([next_state], dtype=torch.float).to(DEVICE),
-            torch.Tensor([done], dtype=torch.float).to(DEVICE),
+            torch.tensor([state], dtype=torch.float).to(DEVICE),
+            torch.tensor([[action]], dtype=torch.long).to(DEVICE),
+            torch.tensor([reward], dtype=torch.float).to(DEVICE),
+            torch.tensor([next_state], dtype=torch.float).to(DEVICE),
+            torch.tensor([done], dtype=torch.float).to(DEVICE),
         ]
         with torch.no_grad():
             return self.delta(experiences)[0, 0].cpu().numpy()
