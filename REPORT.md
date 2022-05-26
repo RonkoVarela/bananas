@@ -2,6 +2,8 @@
 
 This document describes the details the agent implementation, its performance and ideas for future work.
 
+Watch the agent in action! https://youtu.be/TcdG1JvhG3k
+
 ## The Agent model
 
 The agent is a dueling neural network with 2 hidden layers with ReLU activation:
