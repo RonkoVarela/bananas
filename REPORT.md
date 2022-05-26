@@ -32,7 +32,7 @@ The training consists of a deep q-learning with some improved features:
 
 ## Training performance
 
-The trained algorithm achieved the target performance in 516 episodes:
+The trained algorithm achieved the target performance in 616 episodes:
 
 ![Score evolution per episode](score_evolution.png)
 
