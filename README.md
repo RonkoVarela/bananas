@@ -2,6 +2,8 @@
 
 Project to train an agent able to solve the Navigation project in https://github.com/udacity/deep-reinforcement-learning#dependencies
 
+See demo video on YT: https://youtu.be/TcdG1JvhG3k?si=DJAbniJBi8Nw0MuN
+
 The agent aims at collecting yellow bananas (+1 reward) and avoid blue bananas (-1 reward).
 
 The environment has an action space of 4:
